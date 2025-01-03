@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastAPI Object Detection Test</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>FastAPI Object Detection Test</h1>
+        <div id="uploadForm">
+            <div class="form-group">
+                <label for="imageUpload">Upload Image:</label>
+                <input type="file" id="imageUpload" accept="image/*">
+            </div>
+            <button type="button" onclick="uploadImage()">Detect Objects</button>
+            <button type="button" id="readVietnameseTextButton" disabled>Read Vietnamese Text</button>
+        </div>
+        <p id="loading">Processing...</p>
+        <div id="results">
+            <h2>OCR Results</h2>
+            <div class="ocr-text">
+                <pre id="ocrText"></pre>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: rgb(114, 209, 138); /* Light green background */
+    color: #333; /* Dark text for contrast */
+}
+
+.container, #results {
+    max-width: 600px;
+    padding: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Subtle border */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f0f8f4; /* Very light green for container */
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #062406; /* Forest green label */
+}
+
+input[type="file"] {
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Slightly darker border */
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fff; /* White input background */
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #228B22; /* Forest green button */
+    color: white;
+    width: 13rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 10px auto 0;
+}
+
+button:hover {
+    background-color: #006400; /* Darker green on hover */
+}
+
+#results {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e6f7ec; /* Lighter green for results */
+    display: none;
+}
+
+#results h2, .ocr-text h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #228B22; /* Forest green heading */
+}
+
+.ocr-text {
+    margin-top: 15px;
+    min-width: 100%; /* Ensure ocr-text takes at least the full width of its parent */
+}
+
+.ocr-text pre {
+    white-space: pre-wrap;
+    font-family: monospace;
+    background-color: #f0fff5; /* Very light green for pre */
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    line-height: 1.4;
+    color: #062406; /* Dark green for pre text */
+}
+
+#loading {
+    display: none;
+    margin-top: 15px;
+    font-style: italic;
+    color: #556B2F; /* Dark Olive green for loading text */
+    text-align: center;
+}

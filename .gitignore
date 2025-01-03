@@ -1,0 +1,13 @@
+# Ignore all files in the specified directories
+validation/cropped/
+validation/images/
+validation/old/
+validation/detect/
+validation/fail_to_detect/
+validation/detect_blurr/
+validation/roi/
+validation/detect_text/
+utils/detect
+weights/
+../
+
